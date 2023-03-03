@@ -1,0 +1,1 @@
+This is the repository for code used in my CS1028 project, creating novel art styles with AI. The files here contain procedures used to manipulate Stable Diffusion models, specifically so that they can be restructured into 1D arrays of numbers, and back again.
