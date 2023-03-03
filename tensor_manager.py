@@ -12,7 +12,7 @@ def restore_tensor_dict(tensors, dict_template):
     t_counter = 0
     new_dict = {'state_dict': dict()}
     for k in list(dict_template['state_dict'].keys()):
-       new_dict['state_dict'][k] = tensors[t_counter]
+       new_dict['state_dict'][k] = torch.from_numpy(tensors[t_counter])
        t_counter += 1
     return new_dict
 
